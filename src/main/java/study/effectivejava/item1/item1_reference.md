@@ -50,22 +50,29 @@ StaticMethodTest.sum();
 ```
 
 # 불변클래스(Immutable Class)
- 호출 될때마다 새로운 객체를 생성하지 않아도 되는 클래스를 말한다.
+ 객체가 생성되면 그 값을 변경할 수 없는 클래스를 말한다. ex) String
 
 ```java
 public class ImmutableClassTest {
-	static ImmutableClassTest instance;
+  static ImmutableClassTest instance;
+  //값 변경 불가
+  private int i;
 
-	//private 생성자를 통해 객체 생성을 못하게 막음
-	private ImmutableClassTest() {}
+  private ImmutableClassTest() {}
 
-	//정적 메소드를 통해 객체 생성
-	//객체가 생성이 안된 경우에만 생성되게 함
-	public static ImmutableClassTest getInstance() {
-		if(instance == null)
-			instance = new ImmutableClassTest();
-		return instance;
-	}
+  public static ImmutableClassTest newInstance() {
+  	instance = new ImmutableClassTest();
 
+  	return instance;
+  }
+
+  //setValue를 통해서만 i 값을 변경 가능할 때, 변경을 위해서는 객체 생성이
+  //되면서 이전 객체의 값변경 할 수 없다.
+  public int setValue(int value) {
+  	instance = new ImmutableClassTest();
+  	instance.i = value;
+
+  	return instance.i;
+  }
 }
 ```
