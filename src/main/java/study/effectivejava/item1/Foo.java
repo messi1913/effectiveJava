@@ -23,7 +23,7 @@ public class Foo {
 
     public static Foo getFoo(boolean getSon) {
         return getSon ? new Bar() : new Foo();
-    }
+    } 
 
     public static Foo getFooByChildClass(String fullPackageName) {
         Foo foo = null;
