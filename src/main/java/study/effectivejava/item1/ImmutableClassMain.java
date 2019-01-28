@@ -2,19 +2,25 @@ package study.effectivejava.item1;
 
 public class ImmutableClassMain {
 	
-	public static void main(String[] args) {
-		//사용 불가
-		ImmutableClassTest i = new ImmutableClassTest();
+public static void main(String[] args) {
 		
-		ImmutableClassTest i1 = ImmutableClassTest.newInstance();
-		ImmutableClassTest i2 = ImmutableClassTest.newInstance();
+		ImmutableClassTest t1 = ImmutableClassTest.newInstance();
+				
+		t1.setValue(111);
 		
-		System.out.println(i1.equals(i2));
+		t1.setValue(222);
 		
-		ImmutableClassTest i3 = ImmutableClassTest.getInstance();
-		ImmutableClassTest i4 = ImmutableClassTest.getInstance();
 		
-		System.out.println(i3.equals(i4));
+		String a = "aaaa";
+		System.out.println(a.hashCode());
+		
+		a = "bbbb";
+		System.out.println(a.hashCode());
+		
+		a = "cccc";
+		System.out.println(a.hashCode());
+		
+		
 		
 	}
 }
