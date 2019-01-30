@@ -103,10 +103,10 @@ V - Value
 
 	
 
-결과
+> 결과
 
 
-Test [t=111]
+> Test [t=111]
 111111
 333
 ////////////////////////////////////타입 추론//////////////////////////////////
@@ -140,15 +140,16 @@ method 에서의 generic /* 타입추론으로 사용가능*/
 Test.method( 1111 ); // 타입추론에 의하여 컴파일러가 제네릭타입을 Integer로 인식
 
 Map<String, String> myMap = new HashMap<String, String>();
-Map<String, String> myMap = new HashMap<>(); // 타입추론에 의하여 컴파일러가 HashMap의 제네릭타입을 <String, String> 로 알아먹음. 똑똑캄.
+Map<String, String> myMap = new HashMap<>(); 
+  // 타입추론에 의하여 컴파일러가 HashMap의 제네릭타입을 <String, String> 로 알아먹음. 똑똑캄.
 
-Wild Card - ?... ( 제너릭에서의 다형성..? )
+Wild Card - ?... ( 제너릭에서의 다형성 )
 
-< ? > 어떤거든 다쓰겠다, 일단드루와, 모르게따....... 등등 내부적으로는 Ojbect로 표현됨.
-< ? extends A> A를 상속하고 있는 하위타입
-< ? super A> A의 하이라키 상 상위타입
+1. < ? > 어떤거든 다쓰겠다, 일단드루와, 모르게따....... 등등 내부적으로는 Ojbect로 표현됨.
+1. < ? extends A> A를 상속하고 있는 하위타입
+1. < ? super A> A의 하이라키 상 상위타입
+
 
 
 PS . 좋은 소스를 위하여
 5장 제너릭 참고
-
