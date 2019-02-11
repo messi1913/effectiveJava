@@ -7,18 +7,18 @@
 
 * example
 
-	List<String> strList = new ArrayList<>();
-	List<Ojbect> objList = new ArrayList<>();
-	
-	public interface List<E> extends Collection<E> {
-	..
-	
-	}
-	public class ArrayList<E> extends AbstractList<E>
-			implements List<E>, RandomAccess, Cloneable, java.io.Serializable
-	{
-	...
-	}
+		List<String> strList = new ArrayList<>();
+		List<Ojbect> objList = new ArrayList<>();
+
+		public interface List<E> extends Collection<E> {
+		..
+
+		}
+		public class ArrayList<E> extends AbstractList<E>
+				implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+		{
+		...
+		}
 
 
 * 일반적으로 특정타입만을 담을 수 있는 것 아니라, <> 안에 명시한 타입을 담을 수 있도록 제공.
