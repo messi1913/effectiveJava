@@ -9,5 +9,10 @@ public class AccessTest {
 		// System.out.println(test.b);
 		// System.out.println(test.c);
 		System.out.println(test.d); // public 이므로 access 가능
+		
+		//test.methodA();
+		//test.methodB();
+		//test.methodC();
+		test.methodD();
 	}
 }

@@ -4,6 +4,7 @@ import study.effectivejava.item4.accessa.Access.AccessInnerSecond;
 
 public class Access extends AccessModifier {
 	public void test() {
+		// methodA(); 동클래스 가 아니므로 접근불가
 		methodB();
 		methodC();
 		methodD();
