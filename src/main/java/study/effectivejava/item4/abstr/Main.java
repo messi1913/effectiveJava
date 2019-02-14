@@ -4,6 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		//AbstractClass instance = new AbstractClass();
+		//InterFaceExam instance = new InterFaceExam();
+		
+		// 물론 이제 익명클래스로 선언해서 바로 인스턴스하는 과정을 거치면 가능은 함
+		
 		TestClass d = new TestClass();
 		d.methodTest();
 		d.methodTest2();
