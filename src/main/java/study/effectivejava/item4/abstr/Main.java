@@ -14,13 +14,36 @@ public class Main {
 		d.methodTest2();
 		d.methodTest3();
 
+		System.out.println("ddddddddddddddddddddddddddd");
+		
 		TestClass.methodTest2(); // ?????
-		AbstractClass.methodTest2(); // ?????
-
+		AbstractClass.methodTest2(); // ????? 모호..
+		
+		System.out.println("ddddddddddddddddddddddddddd");
+		
+		TestClass.b = 1;
+		TestClass.methodTest2(); // ?????
+		AbstractClass.methodTest2(); // ????? 모호..
+		
+		System.out.println("ddddddddddddddddddddddddddd");
+		
+		AbstractClass.b = 2;
+		TestClass.methodTest2(); // ?????
+		AbstractClass.methodTest2(); // ????? 모호..
+		
+		System.out.println("ddddddddddddddddddddddddddd");
+		
+		
+		
 		TestClass2 dd = new TestClass2();
 
 		dd.methodTest();
 		dd.methodTest3();
+		
+		System.out.println(TestClass2.a);
+		System.out.println(InterFaceExam.a);
+		// TestClass2.a  = 1; error
+		// InterFaceExam.a  = 1; error
 
 		// TestClass.methodTest2();
 		InterFaceExam.methodTest2();
