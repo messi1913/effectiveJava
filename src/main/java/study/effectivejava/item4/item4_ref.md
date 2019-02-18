@@ -1,6 +1,6 @@
-**item4 용어정리**
+# item4 용어정리
 
-접근제어자 (access modifier)  
+**접근제어자 (access modifier)**  
 private -- 현 클래스 내에서만  
 default -- 현 패키지 내에서만   
 protected -- 현 패키지 내에서만 && 상속을 받은경우 외부패키지에서도  
@@ -9,7 +9,7 @@ public -- 모두가능
 예제 : package item4.accessa , item4.accessb
 
 
-추상클래스 (Abstract Class)
+**추상클래스 (Abstract Class)**
 
 -하나이상의 abstract 메소드 -> must be 'abstract Class'  
 -명시적으로 abstract Class  
@@ -84,8 +84,7 @@ abstract vs interface
 	- implement 다중 계층구조
 		
 		
-abstract class 	여야 할까?  
-interface 	여야 할까?  
+**PS. abstract class 여야 할까? interface 여야 할까?**
 
 https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html 
 
