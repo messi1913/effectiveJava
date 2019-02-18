@@ -1,10 +1,10 @@
 **item4 용어정리**
 
-접근제어자 (access modifier)
-private -- 현 클래스 내에서만
-default -- 현 패키지 내에서만 
-protected -- 현 패키지 내에서만 && 상속을 받은경우 외부패키지에서도
-public -- 모두가능
+접근제어자 (access modifier)  
+private -- 현 클래스 내에서만  
+default -- 현 패키지 내에서만   
+protected -- 현 패키지 내에서만 && 상속을 받은경우 외부패키지에서도  
+public -- 모두가능  
 
 예제 : package item4.accessa , item4.accessb
 
