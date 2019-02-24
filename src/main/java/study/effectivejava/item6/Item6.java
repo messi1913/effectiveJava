@@ -45,7 +45,7 @@ public class Item6 {
         StopWatch stopWatch = new StopWatch("Auto Boxing");
         stopWatch.start();
         Long sum = 0l;
-        for (long i = 0 ; i <= Integer.MAX_VALUE ; i++) {
+        for (long i = 0; i <= Integer.MAX_VALUE; i++) {
             sum += i;
         }
         stopWatch.stop();
