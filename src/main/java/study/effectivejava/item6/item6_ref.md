@@ -20,7 +20,8 @@
 | `long` | [L](#)ong | Long lA = new Long(1234);<br/>Long lB = new Long(“1234”); |
 | `float` | [F](#)loat | Float fA = new Float(12.34f);<br/>Float fB = new Float(“12.34f”); |
 | `double` | [D](3)ouble | Double dA = new Double(12.34);<br/>Double dB = new Double(“12.34”); |
-    생성자는 위와 같이 해당하는 기본형 값을 줄 수도 있고 문자열로 줄 수도 있다. 문자열로 주는 경우 해당 데이터형의 형식에 맞아야 한다.
+    생성자는 위와 같이 해당하는 기본형 값을 줄 수도 있고 문자열로 줄 수도 있다.
+    문자열로 주는 경우 해당 데이터형의 형식에 맞아야 한다.
 
 
 
