@@ -36,10 +36,10 @@ public class Boxing {
 		Integer iA = new Integer(123);
 		Integer iB = new Integer(123);
 		
-		int ia = (int) iA;			// (1) 언박싱(unboxing)
-		int ib = iB;				// (2) 오토언박싱(auto unboxing)
-		Integer iC = (Integer) 456;	// (3) 박싱(boxing)
-		Integer iD = ia;			// (4) 오토 박싱(auto boxing)
+		int ia = (int) iA;          // (1) 언박싱(unboxing)
+		int ib = iB;                // (2) 오토언박싱(auto unboxing)
+		Integer iC = (Integer) 456; // (3) 박싱(boxing)
+		Integer iD = ia;            // (4) 오토 박싱(auto boxing)
 	}
 }
 ```
