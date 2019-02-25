@@ -13,9 +13,13 @@
   1. 발표자 : 요약문서 수요일 까지 올리기, 발표자2: 요약문서 개념 정의 
   2. 요약문서 보면서 각자 질문 생각하고 모른 용어는 추가 해 놓기.
   3. 스터디 설명 하면서 같이 Live Coding
+  
+## Eclipse Java11 적용하기.
+1. Download JDK11 - http://jdk.java.net/11/ 
+2. Eclipse update - http://download.eclipse.org/eclipse/updates/4.9-P-builds
+3. Gradle 5 버전 - https://gradle.org/install/ 
+4. Eclipse 및 workspace 설정 - jre/jdk 설정변경 -> jdk11 로 변경. 
 
 
 - [EffectiveJAVA 원서](https://github.com/GianfrancoMS/Books/blob/master/Java/Effective%20Java%20(3rd%20Edition).pdf)
 - [.md 파일만들기](https://heropy.blog/2017/09/30/markdown/)
-
-
