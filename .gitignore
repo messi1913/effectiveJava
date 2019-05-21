@@ -24,3 +24,8 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+###vs code#
+.vscode
+*.class
+/bin/
