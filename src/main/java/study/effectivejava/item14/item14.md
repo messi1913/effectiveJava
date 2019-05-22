@@ -22,3 +22,11 @@ compareTo 메서드의 규약 (equals과 비슷)
     3 . 모든 z에 대해 x.compareTo(y) == 0 이면 x.compareTo(z), y.compareTo(z)는 동일해야 한다
     4 . 필수사항은 아니지만 x.compareTo(y) == 0 이면 x.equals(y)    는 true 인 것이 좋다.
     
+
+4 에 대한 추가 설명
+    equals와 compareTo의 동치성이 어긋나는 경우, Collection 이하의 구현체들은 구현체에서 정의된
+    동작과 엇박자를 낼수 있다. 
+    Collection들은 동치성을 비교할때 equals 대신 compareTo를 사용하고 있다.
+
+    BigDecimal의 경우 compareTo와 equals가 일관되지 않다. 
+    new BigInteger
