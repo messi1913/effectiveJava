@@ -19,6 +19,7 @@ public class Lamda{
         Arrays.asList(1,2,3).parallelStream(); // (2)
 
 
+        //https://jdm.kr/blog/181
         Arrays.asList(1,2,3).stream()
                     .forEach(System.out::println); // 1,2,3
         
