@@ -29,4 +29,11 @@ compareTo 메서드의 규약 (equals과 비슷)
     Collection들은 동치성을 비교할때 equals 대신 compareTo를 사용하고 있다.
 
     BigDecimal의 경우 compareTo와 equals가 일관되지 않다. 
-    new BigInteger
+    HashSet, TreeSet
+    	HashSet의 경우 BigDecimal("1.0") BigDecimal("1.00")은 eqauls로 같은 인스턴스가 아니므로,두개의 인스턴스가 존재한다.
+    	TreeSet의 경우 compareto 로 동치판단을 하기때문에 두개의 인스턴스를 add 할경우, size 는 1이다.
+    	
+#핵심정리
+순서를 고려해야 하는 값 클래스를 작성한다면, 꼭 Comparable 인터페이스를 구현하여, 그 인스턴스들을 쉽게 정렬하고, 검색하고, 비교 기능을 제공하는 컬렉션과 어우러지도록
+해야한다. compareTo 메서드에서 필드의 값을 비교할때 < 와 > 연산자는 쓰지말아야한다. 그대신 박싱된 기본타입 클래스가 제공하는 정적 compare 메서드나 Comparator인터페이스가 제공하는 비교자 생성 메서드를 사용하자.
+
